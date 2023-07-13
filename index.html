@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main w-[100vw] h-[100vh] relative bg-black overflow-hidden flex items-center justify-center">
+
+        <div class="circle1 absolute rounded-full h-[13em] w-[13em] top-5 left-[20rem]"></div>
+        <div class="circle2 absolute rounded-full h-[19em] w-[19em] bottom-5 right-[10rem]"></div>
+
+        <div class="relative contenet w-[420px] h-[470px]
+       rounded-xl top-[30%] bottom-[50%] ml-[30rem]">
+            <div class="sub-content flex flex-col">
+                <div class="imeg  ml-[10px]">
+                    <img class="w-[200px] h-[200px] rounded-full" src="./MyImg.jpg" alt="">
+                </div>
+            <div class="desc flex flex-col gap-5 pb-6">
+                <h1 class="text-3xl font-bold ">Koushik Sarkar</h1>
+                <p class="text-xl ml-3">Full Stack Developer</p>
+            </div>
+            </div>
+
+
+            <div class="allbutton flex gap-5 mt-5">
+                <button onclick="openpopup()" class="shere flex p-3 items-center rounded-md hover:bg-slate-50 hover:text-black">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <p>Shere My Profile</p>
+                </button>
+                <button class="follow rounded-md p-3 hover:bg-slate-50 hover:text-black ">Follow Me</button>
+            </div>
+        </div>
+
+        <div class="popupsection ">
+            <div class="pop-top">
+
+                <h1>Share My Profile</h1>
+
+                <div onclick="closepopup()" class="cross ">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+
+            <div class="pop-bottom">
+                <p>share this via</p>
+
+            <div class="s-link">
+                  <a href="#" class="icon" id="facebook" >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+
+                  <a href="#" class="icon" id="whatsapp" >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+
+                  <a href="#"  class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="#" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+
+                  </a>
+
+                  <a href="#"  class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+            </div>
+            </div>
+        </div>
+
+        <div onclick="closepopup()" class="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
